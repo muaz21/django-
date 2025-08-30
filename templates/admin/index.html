@@ -1,0 +1,48 @@
+{% extends "admin/index.html" %}
+{% load i18n %}
+
+{% block content %}
+<div class="admin-dashboard">
+    <div class="dashboard-header">
+        <h1 class="dashboard-title">
+            <i class="fas fa-tachometer-alt"></i>
+            {{ site_title|default:_('Django administration') }}
+        </h1>
+        <p class="dashboard-subtitle">Manage your content and system settings</p>
+    </div>
+    
+    <div class="dashboard-stats">
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-newspaper"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Blog Posts</h3>
+                <p class="stat-number">{{ app_list|length }}</p>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Users</h3>
+                <p class="stat-number">{{ user_count|default:"0" }}</p>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon">
+                <i class="fas fa-cog"></i>
+            </div>
+            <div class="stat-content">
+                <h3>Settings</h3>
+                <p class="stat-number">{{ settings_count|default:"0" }}</p>
+            </div>
+        </div>
+    </div>
+
+    {{ block.super }}
+</div>
+{% endblock %}

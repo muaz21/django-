@@ -1,0 +1,41 @@
+{% extends "admin/change_list.html" %}
+{% load i18n admin_urls static admin_list %}
+
+{% block extrastyle %}
+{{ block.super }}
+<link rel="stylesheet" type="text/css" href="{% static 'admin/css/custom_admin.css' %}">
+{% endblock %}
+
+{% block object-tools-items %}
+<li>
+    <a href="{% url opts|admin_urlname:'add' %}" class="btn btn-primary">
+        <i class="fas fa-plus"></i> Add {{ opts.verbose_name }}
+    </a>
+</li>
+{% if has_add_permission and cl.opts.model_name == 'blogpost' %}
+<li>
+    <a href="{% url 'admin:content_management_blogpost_bulk_publish' %}" class="btn btn-success">
+        <i class="fas fa-publish"></i> Bulk Publish
+    </a>
+</li>
+{% endif %}
+{% endblock %}
+
+{% block pagination %}
+{% if pagination_required %}
+<div class="pagination-wrapper">
+    <p class="paginator">
+        {% if show_full_result_count %}
+        {% blocktrans with full_result_count=cl.full_result_count result_count=cl.result_count %}
+        Showing {{ result_count }} of {{ full_result_count }} results
+        {% endblocktrans %}
+        {% else %}
+        {% blocktrans with result_count=cl.result_count %}
+        Showing {{ result_count }} results
+        {% endblocktrans %}
+        {% endif %}
+    </p>
+    {% pagination cl %}
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,77 @@
+[
+  {
+    "model": "content_management.portfolio",
+    "pk": 1,
+    "fields": {
+      "title_ar": "موقع دات إكس ساي",
+      "title_en": "DatXSci Website",
+      "description_ar": "منصة متقدمة لعلوم البيانات والذكاء الاصطناعي تقدم حلول متكاملة للشركات",
+      "description_en": "Advanced data science and AI platform providing integrated solutions for businesses",
+      "client_challenge_ar": "تطوير منصة شاملة لعلوم البيانات مع واجهة سهلة الاستخدام",
+      "client_challenge_en": "Develop comprehensive data science platform with user-friendly interface",
+      "solution_ar": "بناء منصة متطورة باستخدام Vue.js مع أدوات تحليل البيانات المتقدمة",
+      "solution_en": "Built advanced platform using Vue.js with sophisticated data analysis tools",
+      "features_ar": ["تحليل البيانات المتقدم", "الذكاء الاصطناعي", "واجهة تفاعلية", "تقارير شاملة"],
+      "features_en": ["Advanced Data Analysis", "Artificial Intelligence", "Interactive Interface", "Comprehensive Reports"],
+      "technologies": ["Vue.js", "Node.js", "AI/ML", "Data Science"],
+      "category": "website",
+      "image": "images/datxsci.com.jpg",
+      "live_url": "https://datxsci.com",
+      "github_url": "",
+      "is_featured": true,
+      "is_active": true,
+      "order": 1,
+      "completed_date": "2024-01-15"
+    }
+  },
+  {
+    "model": "content_management.portfolio",
+    "pk": 2,
+    "fields": {
+      "title_ar": "منصة إي بلات إكس",
+      "title_en": "EplatX Platform",
+      "description_ar": "منصة تجارة إلكترونية متكاملة مع أنظمة دفع متقدمة وحلول سحابية",
+      "description_en": "Integrated e-commerce platform with advanced payment systems and cloud solutions",
+      "client_challenge_ar": "إنشاء منصة تجارة إلكترونية قابلة للتوسع مع نظام دفع آمن",
+      "client_challenge_en": "Create scalable e-commerce platform with secure payment system",
+      "solution_ar": "تطوير منصة شاملة باستخدام React.js مع تكامل أنظمة الدفع المتعددة",
+      "solution_en": "Developed comprehensive platform using React.js with multiple payment system integration",
+      "features_ar": ["نظام دفع متقدم", "إدارة المخزون", "لوحة تحكم شاملة", "تطبيق الجوال"],
+      "features_en": ["Advanced Payment System", "Inventory Management", "Comprehensive Dashboard", "Mobile App"],
+      "technologies": ["React.js", "E-commerce", "Payment Systems", "Cloud"],
+      "category": "ecommerce",
+      "image": "images/eplatx.com.jpg",
+      "live_url": "https://eplatx.com",
+      "github_url": "",
+      "is_featured": true,
+      "is_active": true,
+      "order": 2,
+      "completed_date": "2024-02-20"
+    }
+  },
+  {
+    "model": "content_management.portfolio",
+    "pk": 3,
+    "fields": {
+      "title_ar": "نظام تكوين سوفت الإداري",
+      "title_en": "Takweensoft Management System",
+      "description_ar": "نظام إدارة متكامل لإدارة المشاريع والعملاء مع تقارير متقدمة",
+      "description_en": "Integrated management system for project and client management with advanced reporting",
+      "client_challenge_ar": "تطوير نظام إداري شامل يلبي احتياجات الشركة المتنامية",
+      "client_challenge_en": "Develop comprehensive administrative system meeting growing company needs",
+      "solution_ar": "نظام ويب متطور مع قاعدة بيانات محسنة وواجهة مستخدم متجاوبة",
+      "solution_en": "Advanced web system with optimized database and responsive user interface",
+      "features_ar": ["إدارة المشاريع", "تتبع العملاء", "التقارير المالية", "إدارة الفرق"],
+      "features_en": ["Project Management", "Client Tracking", "Financial Reports", "Team Management"],
+      "technologies": ["React.js", "Node.js", "PostgreSQL", "Cloud Hosting"],
+      "category": "system",
+      "image": "images/takween-soft-logo.jpg",
+      "live_url": "https://system.takweensoft.com",
+      "github_url": "",
+      "is_featured": false,
+      "is_active": true,
+      "order": 3,
+      "completed_date": "2024-03-10"
+    }
+  }
+]
